@@ -14,6 +14,6 @@ This is all made possible through the use of Firebase (Authentication, Realtime 
 
 It is our hope that in having this resource, travelers can have a more enriching travel experience compared to the typical tourist.
 
-**Final Prototype**
+**Final Prototype Screenshots**
 
-![Landing Page] (Images/Landing%Page%20-%20Search.png)
+https://github.com/a-d-nguyen/NativeLife/tree/master/Images
