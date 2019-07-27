@@ -43,7 +43,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyANMbbXb6Efdr3ROz48QhAJLqhIvX7RPQY" />
+            android:value="retracted API Key" />
 
 
         <meta-data
