@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DB6AC"
+    tools:context=".AddDesSubmit">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="92dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text="Thanks for contributing to the Native Life Community! Our team will review your destination as soon as possible. If your destination does not show up in the next couple of hours, either our team is busy with other requests or our team was not able to validate your destination.Thanks again! We hope you're enjoying our app!"
+            android:textColor="#4DB6AC"
+            android:textSize="7.5pt" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonBackHome"
+
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="73dp"
+        android:background="#FFFFFF"
+        android:text="Home"
+        android:textSize="8.5pt"
+        android:fontFamily="@font/lato"
+        android:textColor="#757575"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+</android.support.constraint.ConstraintLayout>

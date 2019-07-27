@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "297930131067",
+    "firebase_url": "https://nativelife-37ca0.firebaseio.com",
+    "project_id": "nativelife-37ca0",
+    "storage_bucket": "nativelife-37ca0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297930131067:android:8ae486068024e700",
+        "android_client_info": {
+          "package_name": "com.example.nativelife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297930131067-096bdkfud5epboo77d60m5k627nrcgsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nativelife",
+            "certificate_hash": "805b65ea64c771b023670f050bc4db3a1230cb86"
+          }
+        },
+        {
+          "client_id": "297930131067-6q089ph0f4pvir6a85nhdd49f2r6hlq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nativelife",
+            "certificate_hash": "992fcac87ab55063c5ac1305272565d77ff3f943"
+          }
+        },
+        {
+          "client_id": "297930131067-6q93jcjqn5cae2fha3t8khualginv1i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9d_aqgc0ELKFbMZR8cpWVtAhBbhgtgcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297930131067-6q93jcjqn5cae2fha3t8khualginv1i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

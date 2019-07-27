@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">NativeLife</string>
+    <string-array name="countries">
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Nepal</item>
+        <item>Japan</item>
+        <item>Russia</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Turkey</item>
+    </string-array>
+
+    <string-array name="Cambodia">
+        <item>Phnom Penh</item>
+        <item>Ta Khmau</item>
+        <item>Battambang</item>
+        <item>Serei Saophoan</item>
+        <item>Siem Reap</item>
+        <item>Kampong Cham</item>
+    </string-array>
+
+    <string-array name="China">
+        <item>Hong Kong</item>
+        <item>Macau</item>
+        <item>Beijing</item>
+        <item>Chongqing</item>
+        <item>Shanghai</item>
+        <item>Tianjin</item>
+    </string-array>
+
+    <string-array name="India">
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Ahmedabad</item>
+        <item>Chennai</item>
+    </string-array>
+
+    <string-array name="Nepal">
+        <item>Kathmandu</item>
+        <item>Pokhara</item>
+        <item>Lalitpur</item>
+        <item>Bharatpur</item>
+        <item>Birgunj</item>
+        <item>Biratnagar</item>
+    </string-array>
+
+    <string-array name="North_Korea">
+        <item>Anju</item>
+        <item>Chongjin</item>
+        <item>Chongju</item>
+        <item>Haeju</item>
+        <item>Hamhung</item>
+        <item>Hoeryong</item>
+    </string-array>
+
+    <string-array name="Japan">
+        <item>Nagoya</item>
+        <item>Toyohashi</item>
+        <item>Okazaki</item>
+        <item>Ichinomiya</item>
+        <item>Seto</item>
+        <item>Tokyo</item>
+        <item>Kashihara</item>
+        <item>Sakurai</item>
+    </string-array>
+
+    <string-array name="Russia">
+        <item>Moscow</item>
+        <item>Saint Petersburg</item>
+        <item>Novosibirsk</item>
+        <item>Yekaterinburg</item>
+        <item>Nizhny Novgorod</item>
+        <item>Kazan</item>
+    </string-array>
+
+    <string-array name="Singapore">
+        <item>Jurong East</item>
+        <item>Kampong Glam</item>
+        <item>Tampines</item>
+        <item>Paya Lebar</item>
+        <item>Ang Mo Kio</item>
+        <item>Hougang</item>
+    </string-array>
+
+    <string-array name="South_Korea">
+        <item>Andong</item>
+        <item>Bucheon</item>
+        <item>Cheongju</item>
+        <item>Daegu</item>
+        <item>Geoje</item>
+        <item>Gimpo</item>
+    </string-array>
+
+    <string-array name="Taiwan">
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Daegu</item>
+        <item>Daegu</item>
+        <item>China</item>
+        <item>India</item>
+    </string-array>
+
+    <string-array name="Thailand">
+        <item>Kaohsiung</item>
+        <item>Taipei</item>
+        <item>Douliu</item>
+        <item>Miaoli</item>
+        <item>Taibao</item>
+        <item>Yilan</item>
+    </string-array>
+
+    <string-array name="Turkey">
+        <item>Istanbul</item>
+        <item>Izmir</item>
+        <item>Antalya</item>
+        <item>Konya</item>
+        <item>Gaziantep</item>
+        <item>Adana</item>
+    </string-array>
+
+    <string name="my_map">{"F":"FOO","B":"BAR"}</string>
+
+
+
+</resources>

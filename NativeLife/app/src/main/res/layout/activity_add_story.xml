@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_story">
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+    <ImageView
+        android:id="@+id/mainimgbg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#4DB6AC" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Your Story"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="@font/lato"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_subject"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="Name Your Story"
+        android:inputType="textShortMessage"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainimgbg" />
+
+        <EditText
+            android:id="@+id/editText_location"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="46dp"
+            android:ems="10"
+            android:hint="Location or Suggested Location"
+            android:inputType="textShortMessage"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_subject" />
+
+        <EditText
+            android:id="@+id/editText_description"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textShortMessage|textMultiLine"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_location" />
+
+        <Button
+            android:id="@+id/uploadP"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="133dp"
+            android:background="#4DB5AB"
+            android:fontFamily="@font/lato"
+            android:text="Upload Photos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FDFDFE"
+            android:textSize="8.5pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_description" />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_weight="1"
+        android:backgroundTint="#4DB5AB"
+        android:numColumns="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadP" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Essentials"
+            android:textOff="Essentials"
+            android:textOn="Essentials"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gv" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Food"
+            android:textOff="Food"
+            android:textOn="Food"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton"
+            app:layout_constraintTop_toBottomOf="@+id/gv" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Attractions"
+            android:textOff="Attractions"
+            android:textOn="Attractions"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Culture"
+            android:textOff="Culture"
+            android:textOn="Culture"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton3"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Safety"
+            android:textOff="Safety"
+            android:textOn="Safety"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton3" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/togglebutton_selector"
+            android:fontFamily="@font/lato"
+            android:hapticFeedbackEnabled="true"
+            android:stateListAnimator="@null"
+            android:text="Transportation"
+            android:textOff="Transportation"
+            android:textOn="Transportation"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton4" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="160dp"
+            android:background="#4DB5AB"
+            android:fontFamily="@font/lato"
+            android:text="Submit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FDFDFE"
+            android:textSize="8.5pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="188dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDestination">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4DB6AC">
+
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="Add a Destination"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="#48ADA0"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewCountryAdd"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:textColor="#FEFEFE"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/editTextCountryAdd"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/textViewCountryAdd"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="29dp"
+
+                android:background="@color/colorWhite"
+                android:ems="20"
+                android:hint="Country"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewCityAdd"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCountryAdd"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:textColor="#FEFEFE"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/editTextCityAdd"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/textViewCityAdd"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                android:ems="20"
+                android:hint="City/Province"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewCityAddTemp"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCountryAdd"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="72dp"
+                android:text=""
+                android:textColor="#FEFEFE"
+                android:textSize="8pt" />
+
+            <!--<Button-->
+            <!--android:id="@+id/buttonSubmit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Submit"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/editTextCityAdd"-->
+            <!--/>-->
+        </RelativeLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="#4DB6AC"
+        android:clickable="true"
+        android:src="@drawable/add_done"
+        app:backgroundTint="#48ADA0"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+
+
+</android.support.design.widget.CoordinatorLayout>
